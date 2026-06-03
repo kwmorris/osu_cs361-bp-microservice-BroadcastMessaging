@@ -21,7 +21,7 @@ Mac and Linux:
 
  pip install -r requirements.txt
  
- docker compose up postgres redis -d
+ docker compose up postgres -d
  
  uvicorn app.main:app --reload --port 8000
 

@@ -8,5 +8,4 @@ class Message(Base):
     id            = Column(String, primary_key=True)
     application   = Column(String, nullable=False)
     message       = Column(String, nullable=False)
-    created_at    = Column(DateTime, default=datetime.now(timezone.utc))
     expired       = Column(Boolean, default=False)
