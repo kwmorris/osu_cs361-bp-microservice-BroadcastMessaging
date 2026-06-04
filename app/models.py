@@ -1,5 +1,4 @@
-from datetime import datetime, timezone
-from sqlalchemy import Column, String, DateTime, Boolean
+from sqlalchemy import Column, String, Boolean
 from app.database import Base
 
 class Message(Base):
@@ -7,5 +6,5 @@ class Message(Base):
 
     id            = Column(String, primary_key=True)
     application   = Column(String, nullable=False)
-    message       = Column(String, nullable=False)
+    data          = Column(String, nullable=False)
     expired       = Column(Boolean, default=False)
