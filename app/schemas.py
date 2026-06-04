@@ -1,10 +1,10 @@
 from pydantic import BaseModel
-from datetime import datetime
 
 class MessageData(BaseModel):
     data: str
 
 class MessageResponse(BaseModel):
-    message: str
-    creation_date: datetime
+    id: str
+    application: str
+    data: str
     expired: bool
